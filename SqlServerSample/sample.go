@@ -191,3 +191,23 @@ func DeleteEmployee(name string) (int64, error) {
 
 	return result.RowsAffected()
 }
+
+// Instalar el controlador de SQL Server para Go
+//go mod init SqlServerSample
+//go mod tidy
+
+// go run sample.go
+// Connected!
+// Inserted ID: 4 successfully.
+// ID: 1, Name: Jake, Location: United States
+// ID: 2, Name: Jake, Location: United States
+// ID: 3, Name: Jake, Location: United States
+// Read 3 row(s) successfully.
+// Updated 3 row(s) successfully.
+// Deleted 3 row(s) successfully.
+
+// Path: SqlServerSample/sample.go
+// go build sample.go
+// ./sample
+
+// [origen](https://learn.microsoft.com/es-es/azure/azure-sql/database/connect-query-go?view=azuresql)
